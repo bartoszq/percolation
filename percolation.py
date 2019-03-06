@@ -190,27 +190,7 @@ class Grid:
 					ifis=1
 					return m, ifis	
 				
-			for i in reversed(xrange(n-1)):
-				i+=1
-				for o in reversed(xrange(n)):
-					if m[i,o]==2:
-						if o==0:
-							if m[i-1,o]==0:
-								m[i-1,o]=2
-							if m[i,o+1]==0:
-								m[i,o+1]=2
-						elif o==(n-1):
-							if m[i-1,o]==0:
-								m[i-1,o]=2
-							if m[i,o-1]==0:
-								m[i,o-1]=2		
-						else:
-							if m[i-1,o]==0:
-								m[i-1,o]=2
-							if m[i,o-1]==0:
-								m[i,o-1]=2	
-							if m[i,o+1]==0:
-								m[i,o+1]=2
+		
 			tn=m.sum()	
 		#after finding all possible connections, returns path and for no percolation 0	
 		return m, ifis		
