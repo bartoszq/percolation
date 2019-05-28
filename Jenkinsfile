@@ -1,1 +1,1 @@
-print "Hello World!\n"
+"python percolation.py".execute()
