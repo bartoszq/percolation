@@ -1,1 +1,1 @@
-python3 percolation.py
+print "Hello World!\n"
